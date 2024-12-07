@@ -1,0 +1,63 @@
+[
+  {
+    "id": "Jean Pascal",
+    "success": "56%",
+    "group": [
+      {
+        "name": "John Doe",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Jane Smith",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Bob Johnson",
+        "avatar": "/avatars/01.png"
+      }
+    ],
+    "actions": "20/10/2023"
+  },
+  {
+    "id": "Edouard Lefevre",
+    "departement": "Nantes",
+    "sector": "RH",
+    "success": "23%",
+    "group": [
+      {
+        "name": "John Doe",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Jane Smith",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Bob Johnson",
+        "avatar": "/avatars/01.png"
+      }
+    ],
+    "actions": "20/10/2023"
+  },
+  {
+    "id": "Florinne Dupont",
+    "departement": "Angers",
+    "sector": "Secrétaire adjoint",
+    "success": "42%",
+    "group": [
+      {
+        "name": "John Doe",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Jane Smith",
+        "avatar": "/avatars/01.png"
+      },
+      {
+        "name": "Bob Johnson",
+        "avatar": "/avatars/01.png"
+      }
+    ],
+    "actions": "20/10/2023"
+  }
+]

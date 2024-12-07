@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - supabase
+
+  supabase:
+    image: supabase/supabase-docker:latest
+    ports:
+      - "8000:8000"
+    environment:
+      POSTGRES_PASSWORD: your_postgres_password
+      JWT_SECRET: your_jwt_secret
+      ANON_KEY: your_anon_key
+      SERVICE_ROLE_KEY: your_service_role_key
+    volumes:
+      - ./supabase:/var/lib/postgresql/data
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: your_postgres_password
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

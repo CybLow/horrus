@@ -1,0 +1,255 @@
+.sidebarOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.sidebarOverlay.sidebarOpen {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+    width: 100%;
+    max-width: 20%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebarContainer.sidebarOpen {
+    transform: translateX(0);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(261, 255, 254);
+    overflow-y: auto;
+}
+
+.sidebarContent {
+    flex-grow: 1;
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav {
+    margin-bottom: 2rem;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    color: #333736;
+    font-size: 1.15rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.navItemActive {
+    background-color: #066FEC;
+    color: #FBFFFE;
+}
+
+.pageWrapper {
+    display: flex;
+}
+
+.navItemInactive:hover {
+    background-color: #066FEC;
+    color: #FBFFFE;
+}
+
+.navIcon {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.navItemInactive:hover .navIcon {
+    color: #FBFFFE;
+}
+
+.teamsSection {
+    margin-top: 2rem;
+}
+
+.sectionTitle {
+    color: #333736;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.teamsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.teamItem {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    color: #333736;
+    font-size: 0.875rem;
+    transition: background-color 0.3s;
+}
+
+.teamItem:hover {
+    background-color: #066FEC;
+    color: #FBFFFE;
+}
+
+.teamItem:hover .navIcon {
+    color: #FBFFFE;
+}
+
+.sidebarFooter {
+    padding: 0 1.5rem 0.25rem 1.5rem;
+}
+
+.settingsLink {
+    display: flex;
+    align-items: center;
+    color: #333736;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.settingsLink:hover {
+    background-color: #066FEC;
+    color: #FBFFFE;
+}
+
+.settingsIcon {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.settingsLink:hover .settingsIcon {
+    color: #FBFFFE;
+}
+
+.LogoutLink {
+    display: flex;
+    align-items: center;
+    color: #333736;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s;
+}
+
+.LogoutLink:hover {
+    background-color: #FF0000;
+    color: #FBFFFE;
+}
+
+.LogoutIcon {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: color 0.3s;
+}
+
+.LogoutLink:hover .LogoutIcon {
+    color: #FBFFFE;
+}
+
+.closeSidebarButton {
+    position: absolute;
+    top: 0.75rem;
+    right: -2.5rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 0.375rem;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.sidebarContainer:not(.sidebarOpen) .closeSidebarButton {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.closeIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #FBFFFE;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 640px) {
+    .sidebarContainer {
+        max-width: 14rem;
+    }
+    .navItem {
+        font-size: 0.5rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .sidebarContainer {
+        max-width: 14rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebarContainer {
+        max-width: 16rem;
+    }
+}
+@media (max-width: 1024px) {
+    .navItem {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .sidebarContainer {
+        transform: translateX(0);
+        max-width: 18rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sidebarContainer {
+        max-width: 20rem;
+    }
+}

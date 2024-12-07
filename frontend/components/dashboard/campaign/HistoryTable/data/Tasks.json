@@ -1,0 +1,182 @@
+[
+  {
+    "id": "Campagne comptabilité",
+    "title": "Fiche bilan fin d'année",
+    "status": "En attente",
+    "label": "documentation",
+    "dateStart": "13/10/2023",
+    "dateEnd": "20/10/2023",
+    "attachments": "Bilan-2023-2024.xlsx"
+  },
+  {
+    "id": "Campagne IT",
+    "title": "Sensibilisation sur les données",
+    "status": "En attente",
+    "label": "documentation",
+    "dateStart": "13/10/2023",
+    "dateEnd": "20/10/2023",
+    "attachments": "Sensibilisation IT.pdf"
+  },
+  {
+    "id": "Campagne RH",
+    "title": "Recrutement alternance",
+    "status": "En attente",
+    "label": "documentation",
+    "dateStart": "12/10/2023",
+    "dateEnd": "15/10/2023",
+    "attachments": "CV Romain Bois.pdf"
+  },
+  {
+    "id": "Campagne commercial",
+    "title": "Réponse client pour le chauffage",
+    "status": "En cours",
+    "label": "documentation",
+    "dateStart": "04/10/2023",
+    "dateEnd": "09/10/2023",
+    "attachments": ""
+  },
+  {
+    "id": "Campagne d'audit",
+    "title": "Campagne pour tous les utilisateurs",
+    "status": "En cours",
+    "label": "documentation",
+    "dateStart": "02/09/2023",
+    "dateEnd": "09/10/2023",
+    "attachments": ""
+  },
+  {
+    "id": "Campagne clients",
+    "title": "Réponse client",
+    "status": "En cours",
+    "label": "documentation",
+    "dateStart": "02/10/2023",
+    "dateEnd": "09/10/2023",
+    "attachments": ""
+  },
+  {
+    "id": "Campagne Dell",
+    "title": "Changement d'ordinateur",
+    "status": "Terminée",
+    "label": "documentation",
+    "dateStart": "23/09/2023",
+    "dateEnd": "30/09/2023",
+    "attachments": "Ordinateur Dell.pdf"
+  },
+  {
+    "id": "Campagne SSI",
+    "title": "Entrainement",
+    "status": "Terminée",
+    "label": "documentation",
+    "dateStart": "20/09/2023",
+    "dateEnd": "30/09/2023",
+    "attachments": ""
+  },
+  {
+    "id": "Campagne PDG",
+    "title": "Investissement équipements",
+    "status": "Terminée",
+    "label": "documentation",
+    "dateStart": "15/09/2023",
+    "dateEnd": "20/09/2023",
+    "attachments": "Fournitures 2024.xlsx"
+  },
+  {
+    "id": "Campagne UX designer",
+    "title": "Demande client nouvelle maquette",
+    "status": "Terminée",
+    "label": "documentation",
+    "dateStart": "11/09/2023",
+    "dateEnd": "25/09/2023",
+    "attachments": "Maquette site web Nike.pdf"
+  },
+  {
+    "id": "Campagne Marketing Digital",
+    "title": "Lancement produit innovant",
+    "status": "En cours",
+    "label": "marketing",
+    "dateStart": "01/11/2023",
+    "dateEnd": "15/12/2023",
+    "attachments": "Plan-Marketing-Q4-2023.pptx"
+  },
+  {
+    "id": "Campagne Développement Durable",
+    "title": "Réduction empreinte carbone",
+    "status": "En attente",
+    "label": "RSE",
+    "dateStart": "01/01/2024",
+    "dateEnd": "31/03/2024",
+    "attachments": "Rapport-Impact-Environnemental.pdf"
+  },
+  {
+    "id": "Campagne Formation Interne",
+    "title": "Intelligence Artificielle pour tous",
+    "status": "En cours",
+    "label": "formation",
+    "dateStart": "15/10/2023",
+    "dateEnd": "15/11/2023",
+    "attachments": "Support-Cours-IA.pdf"
+  },
+  {
+    "id": "Campagne Relation Fournisseurs",
+    "title": "Optimisation chaîne d'approvisionnement",
+    "status": "En attente",
+    "label": "logistique",
+    "dateStart": "01/12/2023",
+    "dateEnd": "28/02/2024",
+    "attachments": "Analyse-Fournisseurs-2023.xlsx"
+  },
+  {
+    "id": "Campagne Innovation R&D",
+    "title": "Développement nouveau matériau",
+    "status": "En cours",
+    "label": "recherche",
+    "dateStart": "01/09/2023",
+    "dateEnd": "31/12/2023",
+    "attachments": "Rapport-Avancement-Projet-X.docx"
+  },
+  {
+    "id": "Campagne Expansion Internationale",
+    "title": "Ouverture marché asiatique",
+    "status": "En attente",
+    "label": "stratégie",
+    "dateStart": "01/02/2024",
+    "dateEnd": "30/06/2024",
+    "attachments": "Etude-Marché-Asie.pdf"
+  },
+  {
+    "id": "Campagne Amélioration Processus",
+    "title": "Automatisation workflow interne",
+    "status": "Terminée",
+    "label": "optimisation",
+    "dateStart": "01/08/2023",
+    "dateEnd": "30/09/2023",
+    "attachments": "Guide-Nouvelles-Procédures.pdf"
+  },
+  {
+    "id": "Campagne Satisfaction Client",
+    "title": "Enquête annuelle satisfaction",
+    "status": "En cours",
+    "label": "service client",
+    "dateStart": "01/10/2023",
+    "dateEnd": "30/11/2023",
+    "attachments": "Questionnaire-Satisfaction-2023.docx"
+  },
+  {
+    "id": "Campagne Cybersécurité",
+    "title": "Mise à jour protocoles sécurité",
+    "status": "En attente",
+    "label": "sécurité",
+    "dateStart": "01/12/2023",
+    "dateEnd": "31/01/2024",
+    "attachments": "Nouvelle-Politique-Sécurité.pdf"
+  },
+  {
+    "id": "Campagne Bien-être au Travail",
+    "title": "Programme santé et sport",
+    "status": "En cours",
+    "label": "RH",
+    "dateStart": "01/11/2023",
+    "dateEnd": "31/12/2023",
+    "attachments": "Planning-Activités-Bien-être.xlsx"
+  }
+]

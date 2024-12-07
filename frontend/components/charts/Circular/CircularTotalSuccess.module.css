@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.circularProgressSvg {
+    width: 4rem;
+    height: 4rem;
+}
+
+.legendContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+}
+
+.legendDot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    margin-right: 0.5rem;
+}
+
+.successDot {
+    background-color: #22c55e;
+}
+
+.failureDot {
+    background-color: #ef4444;
+}
+
+.legendText {
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 1536px) {
+    .legendText {
+        font-size: 1rem;
+    }
+    .legendDot {
+        width: 0.85rem;
+        height: 0.85rem;
+    }
+
+}

@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.title {
+    font-weight: bold;
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    color: #333736;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #333736;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputWrapper {
+    width: 50%;
+}
+
+.inputLabel {
+    color: #333736;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.attackTypeTitle {
+    color: #333736;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .buttonContainer {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .inputWrapper {
+        width: 100%;
+    }
+    .cardContainer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px) {
+    .buttonContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+    }
+}

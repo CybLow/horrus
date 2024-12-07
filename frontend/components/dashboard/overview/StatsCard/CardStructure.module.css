@@ -1,0 +1,148 @@
+.card {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.iconContainer {
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.valueContainer {
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 500;
+}
+
+.trendUp {
+    color: #208324;
+}
+
+.trendDown {
+    color: #AC1E0F;
+}
+
+.trendUpPhishing {
+    color: #AC1E0F;
+}
+
+.trendDownPhishing {
+    color: #208324;
+}
+
+@media (max-width: 1534px) {
+    .title {
+        font-size: 1.25rem;
+    }
+    .value {
+        font-size: 1.5rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .trend {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 1.15rem;
+    }
+    .value {
+        font-size: 1.35rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .trend {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.25rem;
+    }
+    .value {
+        font-size: 1.5rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+
+    .trend {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 1.1rem;
+    }
+    .value {
+        font-size: 1.3rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+
+    .trend {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .title {
+        font-size: 1rem;
+    }
+    .value {
+        font-size: 1.2rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        align-items: start;
+        font-size: 0.8rem;
+    }
+
+    .trend {
+        gap: 0.25rem;
+    }
+}

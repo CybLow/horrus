@@ -1,0 +1,81 @@
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.titleContainer {
+    grid: 1;
+    gap: 0.25rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.selectTrigger {
+    width: 160px;
+    border: 2px solid hsl(var(--input));
+    transition: border-color 0.2s ease;
+}
+
+.selectTrigger:hover {
+    border-color: hsl(var(--secondary-border-hover));
+}
+
+.selectItem:hover {
+    background-color: rgba(238,242,241,0.6);
+}
+
+.cardContent {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+}
+
+.chartContainer {
+    aspect-ratio: auto;
+    height: 192px;
+    width: 100%;
+}
+
+.cartesianGrid {
+    stroke: hsl(var(--chart-grid));
+}
+@media (max-width: 1534px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1240px) {
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 475px) {
+    .cardHeader {
+        flex-direction: row;
+    }
+
+    .titleContainer {
+        text-align: left;
+    }
+
+    .selectTrigger {
+        margin-left: auto;
+    }
+
+    .cardContent {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 1.5rem;
+    }
+}
+
+
+
