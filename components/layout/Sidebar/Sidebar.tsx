@@ -1,11 +1,9 @@
-'use client'
-import { useState, useMemo } from 'react'
-import { usePathname } from 'next/navigation'
-import Image from 'next/image'
-import Link from 'next/link'
-import Header from '@/components/layout/Header/Header'
-import styles from './Sidebar.module.css'
-
+"use client";
+import React, { useMemo } from 'react';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './Sidebar.module.css';
 import {
     House,
     Mail,
@@ -16,7 +14,7 @@ import {
     Settings,
     Wallet,
     Plus,
-} from 'lucide-react'
+} from 'lucide-react';
 
 interface NavItem {
     name: string;
@@ -24,31 +22,35 @@ interface NavItem {
     icon: React.ComponentType<{ className?: string }>;
 }
 
+interface SidebarProps {
+    sidebarOpen: boolean;
+    setSidebarOpen: (isOpen: boolean) => void;
+}
+
 const navigation: NavItem[] = [
     { name: "Vu d'ensemble", href: '/', icon: House },
-    { name: 'Campagne', href: '/campagne', icon: Mail },
+    { name: 'Campagne', href: '/campaign', icon: Mail },
     { name: 'Utilisateurs', href: '/users', icon: UserRoundPlus },
     { name: 'Groupes', href: '/groups', icon: UsersRound },
-]
+];
 
 const UserSpace: NavItem[] = [
     { name: 'Paiement', href: '/payment', icon: Wallet },
-    { name: 'Paramètres', href: '/parametres', icon: Settings },
+    { name: 'Paramètres', href: '/settings', icon: Settings },
     { name: 'Aide', href: '/help', icon: CircleHelp },
-]
+];
 
 const allRoutes = [...navigation, ...UserSpace];
 
 function classNames(...classes: (string | boolean | undefined | null)[]): string {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
-export default function Sidebar() {
-    const [sidebarOpen, setSidebarOpen] = useState(false)
-    const pathname = usePathname()
+export default function Sidebar({ sidebarOpen, setSidebarOpen }: Readonly<SidebarProps>) {
+    const pathname = usePathname();
 
     const handleLinkClick = () => {
-        if (window.innerWidth < 1024) {
+        if (typeof window !== 'undefined' && window.innerWidth < 1024) {
             setSidebarOpen(false);
         }
     };
@@ -62,15 +64,19 @@ export default function Sidebar() {
 
     const isActive = (href: string) => {
         if (href === '/') {
-            return pathname === href
+            return pathname === href;
         }
-        return pathname.startsWith(href)
-    }
+        return pathname.startsWith(href);
+    };
 
     return (
         <>
-            <Header setSidebarOpen={setSidebarOpen} title={activeTitle} />
-            <div className={classNames(styles.sidebarOverlay, sidebarOpen ? styles.sidebarOpen : '')} onClick={() => setSidebarOpen(false)} />
+            {/* Overlay that closes sidebar when clicked on smaller screens */}
+            <div
+                className={classNames(styles.sidebarOverlay, sidebarOpen ? styles.sidebarOpen : '')}
+                onClick={() => setSidebarOpen(false)}
+            />
+
             <div className={classNames(styles.sidebarContainer, sidebarOpen ? styles.sidebarOpen : '')}>
                 <div className={styles.sidebar}>
                     <div className={styles.sidebarContent}>
@@ -95,7 +101,7 @@ export default function Sidebar() {
                                             )}
                                             onClick={handleLinkClick}
                                         >
-                                            <item.icon className={styles.navIcon} aria-hidden="true"/>
+                                            <item.icon className={styles.navIcon} aria-hidden="true" />
                                             {item.name}
                                         </Link>
                                     </li>
@@ -113,8 +119,9 @@ export default function Sidebar() {
                                                 isActive(item.href) ? styles.navItemActive : styles.navItemInactive,
                                                 styles.navItem
                                             )}
+                                            onClick={handleLinkClick}
                                         >
-                                            <item.icon className={styles.navIcon} aria-hidden="true"/>
+                                            <item.icon className={styles.navIcon} aria-hidden="true" />
                                             {item.name}
                                         </Link>
                                     </li>
@@ -124,7 +131,7 @@ export default function Sidebar() {
                     </div>
                     <div className={styles.sidebarFooter}>
                         <a href="#" className={styles.LogoutLink}>
-                            <LogOut className={styles.LogoutIcon} aria-hidden="true"/>
+                            <LogOut className={styles.LogoutIcon} aria-hidden="true" />
                             Déconnexion
                         </a>
                     </div>
@@ -139,5 +146,5 @@ export default function Sidebar() {
                 </button>
             </div>
         </>
-    )
+    );
 }
