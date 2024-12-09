@@ -14,7 +14,7 @@ export default function SignIn() {
   const handleSignUpClick = () => {
     setIsTransitioning(true)
     setTimeout(() => {
-      router.push('/register')
+      router.push('/sign-up')
     }, 300) // Délai correspondant à la durée de l'animation
   }
 

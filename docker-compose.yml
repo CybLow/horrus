@@ -2,7 +2,7 @@ version: '3.8'
 services:
   nextjs:
     build:
-      context: frontend
+      context: ../../AppData/Local/Temp/Rar$DRa10504.17851/dashboard-f0a1ddf27be4f584519bfd0b89b56df1c720db70/frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
