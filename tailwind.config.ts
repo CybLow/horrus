@@ -1,4 +1,5 @@
-import {nextui} from '@nextui-org/theme';
+import { nextui } from '@nextui-org/theme';
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -7,7 +8,7 @@ module.exports = {
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
-    "./node_modules/@nextui-org/theme/dist/components/(checkbox|date-input|input|slider|toggle|popover).js"
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     container: {
@@ -87,6 +88,7 @@ module.exports = {
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),
-    require("tailwindcss-animate"), nextui()
+    require("tailwindcss-animate"),
+    nextui()
   ],
 }

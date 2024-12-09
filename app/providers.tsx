@@ -2,11 +2,15 @@
 
 import { ReactNode } from "react";
 import { NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 export function Providers({ children }: Readonly<{ children: ReactNode }>) {
     return(
         <NextUIProvider>
-            {children}
+            <NextThemesProvider attribute="class">
+                {children}
+            </NextThemesProvider>
         </NextUIProvider>
     );
 }
+

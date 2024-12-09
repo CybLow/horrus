@@ -4,31 +4,31 @@ import LineChartSuccessCampaign from "@/components/charts/LineChart/LineSuccessC
 import RadialTotalAdvancementCampaign from "@/components/charts/Radial/RadialTotalAdvancementCampaign";
 import ActionsCards from "@/components/dashboard/overview/ActionsStatCard/ActionsCards";
 export default function Home() {
-    return(
-        <div className="bg-[#F5F7FA]">
+    return (
+        <div className="min-h-screen bg-[#F5F7FA]">
             <div className="p-4 flex flex-col">
-                <Topbar/>
-                <div>
-                    <GridCard/>
+                <Topbar />
+                <div className="mt-4">
+                    <GridCard />
                 </div>
-                <div className="pl-[20rem] grid grid-cols-4 gap-4
+                <div className="pl-[20rem] mt-6 grid grid-cols-4 gap-4
                     max-xl:pl-[18rem]
                     max-lg:pl-0
                     max-md:grid-cols-1">
                     <div className="col-span-3
                         max-2xl:col-span-2
                         max-md:col-span-1">
-                        <LineChartSuccessCampaign/>
+                        <LineChartSuccessCampaign />
                     </div>
                     <div className="col-span-1
                         max-2xl:col-span-2
                         max-md:col-span-1">
-                        <RadialTotalAdvancementCampaign/>
+                        <RadialTotalAdvancementCampaign />
                     </div>
                 </div>
             </div>
-            <div className="pl-[20rem] max-xl:pl-[18rem] max-lg:pl-0" >
-                <ActionsCards/>
+            <div className="pl-[20rem] max-xl:pl-[18rem] max-lg:pl-0 mt-6">
+                <ActionsCards />
             </div>
         </div>
     )
